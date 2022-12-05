@@ -2,7 +2,7 @@ name: THQ
 
 on:
   schedule:
-    - cron: '0 * * * *'  # every hour.
+    - cron: '0/20 * * * *'  # every 20 minutes.
 
 jobs:
   THQ-post:
