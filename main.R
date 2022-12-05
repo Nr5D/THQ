@@ -2,11 +2,11 @@ df <- read.csv("data/forsampling.csv")
 
 k <- sample(1:6236,1)
 
-id_file <- paste0("surah/", df$surah[k], "/", df$ayah[k], ".txt" )
+id_file <- paste0("translations/id/", df$surah[k], "/", df$ayah[k], ".txt" )
 id_text <- readChar(id_file, file.info(id_file)$size)
 
 
-ar_file <- paste0("translations/id/", df$surah[k], "/", df$ayah[k], ".txt" )
+ar_file <- paste0("surah/", df$surah[k], "/", df$ayah[k], ".txt" )
 ar_text <- readChar(ar_file, file.info(ar_file)$size)
 
 library(rtweet)
